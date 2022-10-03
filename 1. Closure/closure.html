@@ -3,7 +3,7 @@
 	<body>
 
 	<h2>Closures</h2>
-	<button type="button" onclick="fungsiClosure()">Add</button>
+	<button type="button" onclick="tambah()">Add</button>
 	<p>Counter : </p>
 	<p id="test">0</p>
 
@@ -13,7 +13,7 @@
 		  return function () {counter += 1; return counter;}
 		})();
 
-		function fungsiClosure(){
+		function tambah(){
 		  document.getElementById("test").innerHTML = add();
 		}
 	</script>
