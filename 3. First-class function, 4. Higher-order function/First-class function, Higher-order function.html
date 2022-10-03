@@ -1,0 +1,8 @@
+const datang =  function(predikat){
+    return function(objek){
+        console.log(`Selamat ${predikat} ${objek} !`);
+    }
+}
+ 
+const itera = datang('datang di');
+itera("ITERA")
