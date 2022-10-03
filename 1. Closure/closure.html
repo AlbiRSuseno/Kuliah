@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<h2>Closures</h2>
+	<button type="button" onclick="fungsiClosure()">Add</button>
+	<p>Counter : </p>
+	<p id="test">0</p>
+
+	<script>
+		const add = (function () {
+		  let counter = 0;
+		  return function () {counter += 1; return counter;}
+		})();
+
+		function fungsiClosure(){
+		  document.getElementById("test").innerHTML = add();
+		}
+	</script>
+
+	</body>
+</html>
 
